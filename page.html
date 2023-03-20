@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h1><Em>Exercicio 03 14/03/23</Em></h1>
+    <H2><button onclick="alert('Funcionando!!!')">Clique aqui</button></H2>
+    <h3 id="texto">mude o texto!!!</h3>
+    <button id="change">Mude o texto!</button>
+    <p>A URL atual da página é:</p>
+	<p id="url"></p>
+    <p>------------------------------------------------------------------------</p>
+    <p>O Charset Da Pagina é</p>
+    <p id="caracteres"></p>
+
+<script>
+    window.alert("Pagina Feita Por Rodrigo Arsolino")
+    var urlElement = document.getElementById("url");
+    urlElement.textContent = window.location.href;
+    
+    var charset = document.getElementById("caracteres");
+    charset.textContent = document.charset
+    
+    function mudarTexto() {
+    var h3 = document.getElementById("texto");
+    h3.textContent = "Rumo Ao Sucesso!";
+  }
+
+  var btn = document.querySelector("#change");
+  btn.addEventListener("click", mudarTexto);
+
+</script>    
+
+</body>
+</html>
